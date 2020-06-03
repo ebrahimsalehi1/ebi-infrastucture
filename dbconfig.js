@@ -6,7 +6,7 @@ module.exports = {
     // string (not recommended), or it could be prompted for.
     // Alternatively use External Authentication so that no password is
     // needed.
-    password      : process.env.NODE_ORACLEDB_PASSWORD || "hse",
+    password      : process.env.NODE_ORACLEDB_PASSWORD || "hse123",
   
     // For information on connection strings see:
     // https://oracle.github.io/node-oracledb/doc/api.html#connectionstrings
