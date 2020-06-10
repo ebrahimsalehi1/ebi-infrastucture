@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var bpmnioRouter = require('./routes/bpmnio');
 var person = require('./routes/person');
+var ebi = require('./routes/ebi');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/bpmnio', bpmnioRouter);
 app.use('/add-person',person);
+app.use('/ebi',ebi);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
