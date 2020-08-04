@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var bpmnioRouter = require('./routes/bpmnio');
 var person = require('./routes/person');
 var ebi = require('./routes/ebi');
+var authentication = require('./routes/authentication');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/users', usersRouter);
 app.use('/bpmnio', bpmnioRouter);
 app.post('/add-person',person);
 app.use('/ebi',ebi);
+app.post('/fnd/auth/login',authentication);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
