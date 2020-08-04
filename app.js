@@ -27,7 +27,7 @@ app.use(cors());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/bpmnio', bpmnioRouter);
-app.use('/add-person',person);
+app.post('/add-person',person);
 app.use('/ebi',ebi);
 
 // catch 404 and forward to error handler
